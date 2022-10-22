@@ -1,3 +1,19 @@
 body {
     background-color: lightblue;
 }
+
+#sin-div {
+    display: flex;
+    margin-bottom: auto;
+    right: 0; left: 0;
+}
+
+#sin-img {
+    height: 40px;
+    margin-left: 900px;
+}
+
+#sin-input {
+    height: 45px; width: 45px;
+    margin-right: 900px;
+}
