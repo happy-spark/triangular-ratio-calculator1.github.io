@@ -4,8 +4,9 @@ body {
 
 #sin-div {
     display: flex;
+    margin: 0 auto;
     justify-content: center;
-    right: 0; left: 0;
+    width: 180px;
 }
 
 #sin-img {
@@ -13,9 +14,10 @@ body {
 }
 
 #sin-input {
-    height: 45px; width: 45px;
+    font-size: 22px;
+    height: 40px; width: 40px;
 }
 
 #sin-degree {
-    
+    font-size: 50px;
 }
