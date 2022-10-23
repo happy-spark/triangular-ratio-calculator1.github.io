@@ -22,7 +22,6 @@ function decimalTheorem(d) {
 }
 
 
-
 function sin(X) {
     return decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8));
 }
