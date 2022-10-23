@@ -6,14 +6,19 @@ body {
     display: flex;
     margin-bottom: auto;
     right: 0; left: 0;
+    justify-content: center;
 }
 
 #sin-img {
     height: 40px;
-    margin-left: 900px;
+    justify-content: center;
 }
 
 #sin-input {
     height: 45px; width: 45px;
-    margin-right: 900px;
+    justify-content: center;
+}
+
+#sin-degree {
+    justify-content: center;
 }
