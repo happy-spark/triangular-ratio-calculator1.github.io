@@ -4,21 +4,18 @@ body {
 
 #sin-div {
     display: flex;
-    margin-bottom: auto;
-    right: 0; left: 0;
     justify-content: center;
+    right: 0; left: 0;
 }
 
 #sin-img {
     height: 40px;
-    justify-content: center;
 }
 
 #sin-input {
     height: 45px; width: 45px;
-    justify-content: center;
 }
 
 #sin-degree {
-    justify-content: center;
+    
 }
