@@ -7,12 +7,15 @@ function joinWeb() {
 
 function decimalTheorem(d) {
     var temp = d.length;
-    var tempText = "";
+    var tempText = d;
     if (d.includes('.') == true) {
         while(true) {
             temp = temp-1;
-            if (d.chatAt(temp) == 0) {
-                tempText = d.substr(0, temp-1);
+            if (d.charAt(temp) == 0) {
+                tempText = d.substr(0, temp);
+            }else if (d.charAt(temp) == "."){
+                tempText = d.substr(0, temp);
+                break;
             }else{
                 break;
             }
@@ -23,7 +26,11 @@ function decimalTheorem(d) {
 
 
 function sin(X) {
-    return decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8));
+    if (Math.sin(X * Math.PI / 180).toFixed(8) == "NaN") {
+        return "null";
+    }else{
+        return decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8));
+    }
 }
 
 joinWeb()
