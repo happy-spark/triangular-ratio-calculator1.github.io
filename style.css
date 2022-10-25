@@ -2,6 +2,7 @@ body {
     background-color: lightblue;
 }
 
+/* SIN */
 #sin-div {
     display: flex;
     margin: 0 auto;
@@ -19,5 +20,26 @@ body {
 }
 
 #sin-degree {
+    font-size: 50px;
+}
+
+/* COS */
+#cos-div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 180px;
+}
+
+#cos-img {
+    height: 29px;
+}
+
+#cos-input {
+    font-size: 22px;
+    height: 40px; width: 40px;
+}
+
+#cos-degree {
     font-size: 50px;
 }
