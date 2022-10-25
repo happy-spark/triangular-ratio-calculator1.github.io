@@ -12,6 +12,7 @@ function joinWeb() {
     document.getElementById("cos-result").innerHTML = '<p style="font-size: 35px">=' + cos(cosX) + '</p>';
 }
 
+
 function decimalTheorem(d) {
     var temp = d.length;
     var tempText = d;
