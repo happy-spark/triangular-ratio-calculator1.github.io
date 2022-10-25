@@ -10,6 +10,12 @@ function joinWeb() {
 
     var cosX = document.getElementById("cos-input").value;
     document.getElementById("cos-result").innerHTML = '<p style="font-size: 35px">=' + cos(cosX) + '</p>';
+
+    // TAN
+    document.getElementById("tan-input").value = 0;
+
+    var tanX = document.getElementById("tan-input").value;
+    document.getElementById("tan-result").innerHTML = '<p style="font-size: 35px">=' + tan(tanX) + '</p>';
 }
 
 
@@ -69,6 +75,30 @@ function cos(X) {
 $("#cos-input").on("propertychange change paste input", function() {
     var cosX = document.getElementById("cos-input").value;
     document.getElementById("cos-result").innerHTML = '<p style="font-size: 35px">=' + cos(cosX) + '</p>';
+});
+
+// TAN
+function tan(X) {
+    var tanResult = sin(X)/cos(X)
+    if (tanResult.toFixed(8) == "NaN") {
+        return "null";
+    }else if (tanResult == Infinity){
+        return Infinity;
+    }else{
+        if (decimalTheorem(tanResult.toFixed(8)) == -0) {
+            return 0;
+        }else if (decimalTheorem(tanResult.toFixed(8)) == -Infinity){
+            return Infinity;
+        }else{
+            return decimalTheorem(tanResult.toFixed(8));
+        }
+    }
+}
+
+
+$("#tan-input").on("propertychange change paste input", function() {
+    var tanX = document.getElementById("tan-input").value;
+    document.getElementById("tan-result").innerHTML = '<p style="font-size: 35px">=' + tan(tanX) + '</p>';
 });
 
 joinWeb()
