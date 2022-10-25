@@ -43,3 +43,24 @@ body {
 #cos-degree {
     font-size: 50px;
 }
+
+/* TAN */
+#tan-div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 180px;
+}
+
+#tan-img {
+    height: 38px;
+}
+
+#tan-input {
+    font-size: 22px;
+    height: 40px; width: 40px;
+}
+
+#tan-degree {
+    font-size: 50px;
+}
