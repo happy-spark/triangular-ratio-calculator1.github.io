@@ -31,6 +31,7 @@ function decimalTheorem(d) {
     return tempText;
 }
 
+
 // SIN
 function sin(X) {
     if (Math.sin(X * Math.PI / 180).toFixed(8) == "NaN") {
