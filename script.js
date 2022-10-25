@@ -29,7 +29,11 @@ function sin(X) {
     if (Math.sin(X * Math.PI / 180).toFixed(8) == "NaN") {
         return "null";
     }else{
-        return decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8));
+        if (decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8)) == -0) {
+            return 0;
+        }else{
+            return decimalTheorem(Math.sin(X * Math.PI / 180).toFixed(8));
+        }
     }
 }
 
